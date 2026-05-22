@@ -31,11 +31,11 @@ export default function Header() {
           onClick={() => scrollTo("inicio")}
           className="flex items-center gap-3"
         >
-          <div className="w-10 h-10 md:w-12 md:h-12 border-2 border-[#0A0A0A] bg-[#B73225] flex items-center justify-center overflow-hidden">
+          <div className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center">
             <img
-              src={BRAND.logoUrl}
+              src={BRAND.navLogoUrl}
               alt="Madness logo"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-contain"
             />
           </div>
           <div className="text-left leading-none">

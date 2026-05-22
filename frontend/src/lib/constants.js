@@ -3,9 +3,12 @@ export const BRAND = {
   name: "Madness Tattoo & Piercing",
   short: "Madness",
   est: "Quilmes Centro",
-  // Actual badge/logo (cream MADNESS on red)
+  // Actual badge/logo (cream MADNESS on red) — used in hero & footer
   logoUrl:
     "https://customer-assets.emergentagent.com/job_a6615f76-9e8f-4854-9adb-41b69a55a22c/artifacts/jlyx5ncz_550776574_18528079153061927_2453293338906490883_n.jpg",
+  // Logo variant used in the navbar (red on black)
+  navLogoUrl:
+    "https://customer-assets.emergentagent.com/job_ink-studio-72/artifacts/e5suittx_LogoMadnessrojo.png",
   // Screenshot of IG grid (used as decorative collage in gallery preview)
   igGridUrl:
     "https://customer-assets.emergentagent.com/job_a6615f76-9e8f-4854-9adb-41b69a55a22c/artifacts/dlfuoxi2_madness-tatto.png",
