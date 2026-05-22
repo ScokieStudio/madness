@@ -89,18 +89,6 @@ export default function Gallery() {
             );
           })}
         </div>
-
-        <div className="mt-10 text-center">
-          <a
-            data-testid="gallery-instagram-cta"
-            href="https://www.instagram.com/madness.tattoo.piercing/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-vintage btn-vintage-cream inline-block font-sub uppercase tracking-widest text-sm bg-[#B73225] text-[#E8DCC4] border-2 border-[#E8DCC4] hard-shadow-cream px-7 py-4"
-          >
-            Ver más en Instagram →
-          </a>
-        </div>
       </div>
 
       {/* Lightbox */}
