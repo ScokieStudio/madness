@@ -27,11 +27,6 @@ const WORKS = [
     label: "Estilo japonés",
     cat: "tattoo",
   },
-  {
-    url: "https://customer-assets.emergentagent.com/job_a6615f76-9e8f-4854-9adb-41b69a55a22c/artifacts/dlfuoxi2_madness-tatto.png",
-    label: "Nuestro feed",
-    cat: "instagram",
-  },
 ];
 
 export default function Gallery() {
