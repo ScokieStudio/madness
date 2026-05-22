@@ -1,0 +1,160 @@
+{
+  "theme": {
+    "mode": "light",
+    "archetype": "Custom Vintage Americana (High-Contrast)",
+    "description": "A bold, nostalgic, patriotic, old-school tattoo flash style. Emulates American roadside signage, classic tattoo sheets, and vintage posters. Employs strong contrast between deep brick red, cream, and charcoal black. Sharp edges, framed sections, and heavy borders."
+  },
+  "colors": {
+    "background": {
+      "primary": "#E8DCC4",
+      "secondary": "#B73225",
+      "tertiary": "#0A0A0A"
+    },
+    "text": {
+      "primary": "#0A0A0A",
+      "secondary": "#4A4A4A",
+      "on_dark": "#E8DCC4",
+      "on_red": "#E8DCC4",
+      "accent": "#B73225"
+    },
+    "border": {
+      "default": "#0A0A0A",
+      "subtle": "rgba(10, 10, 10, 0.2)",
+      "accent": "#B73225"
+    },
+    "brand": {
+      "red": "#B73225",
+      "dark_red": "#A52A1F",
+      "cream": "#E8DCC4",
+      "black": "#0A0A0A",
+      "navy": "#1B263B"
+    }
+  },
+  "typography": {
+    "fonts": {
+      "heading": "'Alfa Slab One', cursive, serif",
+      "subheading": "'Oswald', sans-serif",
+      "body": "'Work Sans', sans-serif",
+      "accent": "'Cormorant Garamond', serif"
+    },
+    "scales": {
+      "h1": "text-5xl sm:text-6xl md:text-7xl tracking-tighter uppercase",
+      "h2": "text-4xl sm:text-5xl tracking-tight uppercase",
+      "h3": "text-2xl sm:text-3xl tracking-tight uppercase",
+      "body": "text-base sm:text-lg leading-relaxed",
+      "overline": "text-sm tracking-[0.2em] uppercase font-bold"
+    },
+    "rules": [
+      "Headings must use uppercase for the vintage poster/sign-painter feel.",
+      "Never use Inter for headings.",
+      "Use very tight tracking for H1 and H2.",
+      "Use Cormorant Garamond for italicized vintage accents (e.g., 'Est. 2026', 'Quilmes Centro')."
+    ]
+  },
+  "layout": {
+    "spacing_scale": "Generous spacing but highly structured within heavy borders. p-8 to p-16 for section padding.",
+    "container_rules": "Avoid rounded corners. Use rounded-none globally to mimic printed posters and flash sheets. Add thick 2px or 4px solid black/red borders around containers.",
+    "grid_patterns": [
+      {
+        "name": "Bento Flash Sheet",
+        "usage": "Gallery and Services",
+        "classes": "grid grid-cols-1 md:grid-cols-12 gap-6 lg:gap-8",
+        "description": "Asymmetric bento grid mimicking a tattoo flash sheet. Thick borders around each item."
+      }
+    ]
+  },
+  "surfaces": {
+    "cards": "Flat background colors (Cream or Charcoal), sharp corners (rounded-none), thick 2px solid border border-black, bold hard shadow (e.g., shadow-[8px_8px_0px_#0A0A0A]). No soft glassmorphism.",
+    "buttons": "Badge-like buttons. Solid Deep Red or Black background, Cream text, rounded-none, 2px border, hard drop shadow. Hover state: invert colors or translate-y-1 with shadow adjustment.",
+    "inputs": "Flat inputs, sharp corners, 2px solid black borders, cream background. Thick focus ring (focus:ring-2 focus:ring-red-600 focus:outline-none)."
+  },
+  "media": {
+    "images": [
+      {
+        "id": "hero_bg_flash",
+        "url": "https://static.prod-images.emergentagent.com/jobs/a6615f76-9e8f-4854-9adb-41b69a55a22c/images/24ed3f381e9de49f82941a9164ece3e565469802157d71c36533797300fd22fb.png",
+        "description": "Generated traditional Americana tattoo flash pattern for hero background overlay.",
+        "usage": "Use as a background-image with low opacity (10-20%) and bg-blend-multiply over the deep red hero section."
+      },
+      {
+        "id": "paper_texture",
+        "url": "https://static.prod-images.emergentagent.com/jobs/a6615f76-9e8f-4854-9adb-41b69a55a22c/images/6feccce1e8d94f27dd994fa8b826febbc0b349b4c3a5560e4555958a13b69613.png",
+        "description": "Heavy film grain vintage paper texture.",
+        "usage": "Use as a fixed background for the whole site or specific cream sections (opacity-50, mix-blend-multiply)."
+      },
+      {
+        "id": "tattoo_working_1",
+        "url": "https://images.unsplash.com/photo-1597852075234-fd721ac361d3?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwyfHx0cmFkaXRpb25hbCUyMHRhdHRvb3xlbnwwfHx8fDE3Nzk0NTcwMjV8MA&ixlib=rb-4.1.0&q=85",
+        "description": "Tattoo artist working on an arm.",
+        "usage": "Hero image or artist section highlight."
+      },
+      {
+        "id": "tattoo_working_2",
+        "url": "https://images.pexels.com/photos/37023013/pexels-photo-37023013.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Tattoo artist working on sketches in a studio.",
+        "usage": "About/Artists section."
+      },
+      {
+        "id": "tattoo_traditional",
+        "url": "https://images.pexels.com/photos/2134085/pexels-photo-2134085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Close up of traditional color tattoo.",
+        "usage": "Gallery item or Services (Tattoo) card."
+      },
+      {
+        "id": "piercing_1",
+        "url": "https://images.pexels.com/photos/13575093/pexels-photo-13575093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "description": "Close up of ear with multiple piercings.",
+        "usage": "Services (Piercing) card or Gallery."
+      }
+    ],
+    "image_rules": [
+      "Convert all gallery photos to grayscale on hover or by default with color on hover for a dramatic vintage effect.",
+      "Images should be contained within hard borders (2px black)."
+    ]
+  },
+  "animations": {
+    "general": "Keep animations rigid, snappy, and minimal to match the 'print' vibe. No smooth, floaty modern SaaS transitions.",
+    "hover_states": "Buttons and cards should use hard drop shadows (translate-x-1 translate-y-1 shadow-[4px_4px_0px_#0A0A0A]) to simulate a physical stamp or badge.",
+    "marquee": "Use a marquee for text like 'MADNESS TATTOO & PIERCING' or 'TRADICIÓN & ARTE EN TU PIEL' with large typography, thick stroke, and no fill (text-transparent, stroke-black)."
+  },
+  "components": {
+    "Header": {
+      "style": "Sticky, high z-index. Solid cream or deep red background. Thick bottom border (border-b-4 border-black). Vintage sign typography for logo text.",
+      "elements": "Brand Name (Madness Tattoo & Piercing), Nav Links, 'Reservar' CTA."
+    },
+    "Hero": {
+      "style": "Full bleed or heavily framed. Background: Deep Red (#B73225) with the flash_pattern overlay (mix-blend-multiply opacity-20). Center-aligned massive typography in Cream (#E8DCC4).",
+      "content": "H1: 'TRADICIÓN & ARTE EN TU PIEL'. Overline: 'MADNESS TATTOO & PIERCING'. Subtitle: 'Quilmes Centro'. Primary CTA: 'Reservá tu turno'."
+    },
+    "Services": {
+      "style": "Cream background. Two massive rectangular cards (Tattoo / Piercing). Each card has a thick black border, an image covering the top half, and bold text on the bottom half.",
+      "layout": "grid-cols-1 md:grid-cols-2 gap-8"
+    },
+    "Gallery": {
+      "style": "Bento Grid layout (Mode A). Images must fill the grid cells completely, framed by thick borders. Add vintage ornamental dividers (e.g., SVG stars or anchors) between sections."
+    },
+    "Artists": {
+      "style": "Wanted poster style. Cream background, black borders. Photo of the artist, name in vintage slab font, specialty."
+    },
+    "ContactForm": {
+      "style": "Solid sharp cards for the form. Use Shadcn components but override classes to: rounded-none, border-2 border-black. Deep red accent for the submit button.",
+      "behavior": "WhatsApp Redirect Form. The form must collect Name, Service (Tattoo/Piercing), and Details. On submit, encode the data into a WhatsApp URL and open in a new tab: https://wa.me/54911XXXXXXX?text=Hola,%20me%20llamo%20[Name]..."
+    },
+    "Footer": {
+      "style": "Deep Charcoal (#0A0A0A) background, Cream text. Big bold logo. Real data: Alsina 311, Quilmes Centro | Lunes a Sábados 11 a 19hs | IG: @madness.tattoo.piercing."
+    }
+  },
+  "testing": {
+    "attributes": "All interactive elements must have data-testid attributes (e.g., data-testid='hero-cta-button', data-testid='whatsapp-submit')."
+  },
+  "custom_instructions_to_main_agent": [
+    "Strictly adhere to the Custom Vintage Americana theme. No generic tech-SaaS rounded corners or soft shadows.",
+    "Use 'rounded-none' for ALL elements. Buttons, cards, images, inputs MUST be sharp rectangles.",
+    "Implement the heavy border 'Neumorphism / Hard Shadow' style: e.g., 'border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]'.",
+    "For the WhatsApp form, DO NOT create a complex backend. Just an HTML/React form that builds a string and uses window.open() to direct to wa.me.",
+    "Ensure high contrast and accessibility. Use the paper_texture subtly so text remains highly readable.",
+    "Add 'data-testid' to all buttons and form inputs for automated testing.",
+    "Incorporate the provided media URLs. DO NOT use placeholder text for images.",
+    "Use Lucide icons (or Phosphor) to add classic Americana motifs if possible (Stars, anchors, crosses)."
+  ]
+}
