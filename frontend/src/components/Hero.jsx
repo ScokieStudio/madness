@@ -13,6 +13,22 @@ export default function Hero() {
       data-testid="hero-section"
       className="relative min-h-screen pt-20 md:pt-24 bg-[#B73225] text-[#E8DCC4] overflow-hidden grain-overlay"
     >
+      {/* Background photo (tattoo close-up) */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage:
+            "url('https://images.unsplash.com/photo-1597852075234-fd721ac361d3?crop=entropy&cs=srgb&fm=jpg&q=85&w=2400')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      />
+      {/* Red color wash on top of photo to keep brand presence */}
+      <div className="absolute inset-0 bg-[#B73225] mix-blend-multiply pointer-events-none" />
+      {/* Dark vignette for legibility */}
+      <div className="absolute inset-0 bg-gradient-to-r from-[#0A0A0A]/85 via-[#0A0A0A]/55 to-transparent pointer-events-none" />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A]/60 via-transparent to-transparent pointer-events-none" />
+
       {/* Subtle flash pattern overlay (decorative SVG) */}
       <div
         className="absolute inset-0 opacity-10 mix-blend-multiply pointer-events-none"
