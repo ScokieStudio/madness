@@ -98,19 +98,11 @@ export default function Hero() {
 
           {/* Right: logo */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end reveal">
-            <div className="relative">
-              <img
-                src={BRAND.logoUrl}
-                alt="Madness Tattoo & Piercing"
-                className="w-72 sm:w-96 md:w-[28rem] h-auto"
-              />
-              <div className="absolute -bottom-2 -right-2 bg-[#E8DCC4] text-[#0A0A0A] border-2 border-[#0A0A0A] px-4 py-2 hard-shadow rotate-3">
-                <div className="font-heading text-xl uppercase leading-none">
-                  Est.
-                </div>
-                <div className="font-accent italic text-sm">Quilmes</div>
-              </div>
-            </div>
+            <img
+              src={BRAND.logoUrl}
+              alt="Madness Tattoo & Piercing"
+              className="w-72 sm:w-96 md:w-[28rem] h-auto"
+            />
           </div>
         </div>
       </div>
