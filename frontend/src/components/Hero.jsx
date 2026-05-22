@@ -96,18 +96,15 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right: badge / logo */}
+          {/* Right: logo */}
           <div className="lg:col-span-5 flex justify-center lg:justify-end reveal">
             <div className="relative">
-              <div className="absolute -inset-3 bg-[#0A0A0A]" />
-              <div className="relative bg-[#B73225] border-2 border-[#E8DCC4] p-6 sm:p-10">
-                <img
-                  src={BRAND.logoUrl}
-                  alt="Madness Tattoo & Piercing"
-                  className="w-64 sm:w-80 md:w-96 h-auto"
-                />
-              </div>
-              <div className="absolute -bottom-6 -right-6 bg-[#E8DCC4] text-[#0A0A0A] border-2 border-[#0A0A0A] px-4 py-2 hard-shadow rotate-3">
+              <img
+                src={BRAND.logoUrl}
+                alt="Madness Tattoo & Piercing"
+                className="w-72 sm:w-96 md:w-[28rem] h-auto"
+              />
+              <div className="absolute -bottom-2 -right-2 bg-[#E8DCC4] text-[#0A0A0A] border-2 border-[#0A0A0A] px-4 py-2 hard-shadow rotate-3">
                 <div className="font-heading text-xl uppercase leading-none">
                   Est.
                 </div>
