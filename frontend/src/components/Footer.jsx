@@ -112,11 +112,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-6 border-t border-[#E8DCC4]/20 flex flex-col sm:flex-row items-center justify-between gap-3 font-sub uppercase tracking-widest text-[10px] text-[#E8DCC4]/60">
-          <span>© {new Date().getFullYear()} Madness Tattoo &amp; Piercing</span>
-          <span className="font-accent italic normal-case tracking-normal text-sm">
-            Hecho con tinta en Quilmes
-          </span>
+        <div className="mt-12 pt-6 border-t border-[#E8DCC4]/20 flex flex-col sm:flex-row items-center justify-center gap-3 font-sub uppercase tracking-widest text-[10px] text-[#E8DCC4]/60">
+          <span>© {new Date().getFullYear()} Madness Tattoo &amp; Piercing · Todos los derechos reservados - Hecho con <span className="text-primary">♥</span> por <a href="https://www.scokiestudio.com/" target="_blank" rel="noreferrer" className="text-primary hover:underline">ScokieStudio Design</a></span>
         </div>
       </div>
     </footer>

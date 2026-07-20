@@ -1,29 +1,29 @@
 import { Instagram, Star } from "lucide-react";
+import lucasImg from "@/assets/Lucas.webp";
+import camilaImg from "@/assets/Camila.webp";
+import nicoImg from "@/assets/Nico.webp";
 
 const ARTISTS = [
   {
     name: "Lucas Méndez",
     role: "Tatuador · Old School / Color",
     bio: "Especialista en tradicional americano y neo-tradicional. Más de 10 años marcando piel.",
-    image:
-      "https://images.unsplash.com/photo-1597852075234-fd721ac361d3?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
-    ig: "lucas.mtattoo",
+    image: lucasImg,
+    ig: "madness.tattoo.piercing",
   },
   {
     name: "Camila Ríos",
     role: "Tatuadora · Fineline / Lettering",
     bio: "Trazos finos, frases y minimal. Diseños delicados con identidad propia.",
-    image:
-      "https://images.pexels.com/photos/37023013/pexels-photo-37023013.jpeg?auto=compress&cs=tinysrgb&w=900",
-    ig: "cami.fineline",
+    image: camilaImg,
+    ig: "madness.tattoo.piercing",
   },
   {
     name: "Nico Torres",
     role: "Piercer Certificado",
     bio: "Joyería de titanio implant-grade, perforaciones seguras y asesoramiento personalizado.",
-    image:
-      "https://images.pexels.com/photos/13575093/pexels-photo-13575093.jpeg?auto=compress&cs=tinysrgb&w=900",
-    ig: "nico.piercer",
+    image: nicoImg,
+    ig: "madness.tattoo.piercing",
   },
 ];
 
@@ -36,13 +36,13 @@ export default function Artists() {
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center mb-16">
-          <p className="font-sub uppercase tracking-[0.3em] text-xs text-[#B73225] mb-3">
+          <p className="font-sub uppercase tracking-[0.3em] text-sm text-[#B73225] mb-3">
             La banda
           </p>
           <h2 className="font-heading uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl text-[#0A0A0A]">
             Nuestros Artistas
           </h2>
-          <p className="font-accent italic text-lg sm:text-xl text-[#0A0A0A]/70 mt-4 max-w-2xl mx-auto">
+          <p className="font-sub italic text-lg sm:text-xl text-[#0A0A0A] mt-4 max-w-2xl mx-auto">
             Gente que ama el oficio. Profesionales con estilo, trayectoria y
             obsesión por la calidad.
           </p>

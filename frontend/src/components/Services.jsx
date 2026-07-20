@@ -1,4 +1,6 @@
 import { Syringe, Sparkles, ShieldCheck, Clock, Star } from "lucide-react";
+import tattooImg from "@/assets/tattoo.webp";
+import piercingImg from "@/assets/piercing.webp";
 
 const services = [
   {
@@ -7,8 +9,7 @@ const services = [
     overline: "Tinta & Tradición",
     description:
       "Diseños personalizados, lettering, fineline, blackwork, realismo y old-school. Trabajamos sobre tu idea hasta que sea exactamente lo que querés llevar para siempre.",
-    image:
-      "https://images.pexels.com/photos/2134085/pexels-photo-2134085.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=900",
+    image: tattooImg,
     points: [
       "Diseño personalizado sin cargo",
       "Material descartable",
@@ -21,8 +22,7 @@ const services = [
     overline: "Joyería & Estilo",
     description:
       "Lóbulo, helix, tragus, septum, navel, nostril y más. Joyería de titanio implant-grade y técnicas seguras de perforación con instrumental estéril.",
-    image:
-      "https://images.pexels.com/photos/13575093/pexels-photo-13575093.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=900&w=900",
+    image: piercingImg,
     points: [
       "Titanio implant-grade",
       "Perforación con aguja",
@@ -51,13 +51,13 @@ export default function Services() {
           <div className="divider-star max-w-md mx-auto mb-6">
             <Star className="w-4 h-4 fill-current" />
           </div>
-          <p className="font-sub uppercase tracking-[0.3em] text-xs text-[#B73225] mb-3">
+          <p className="font-sub uppercase tracking-[0.3em] text-sm text-[#B73225] mb-3">
             Lo que hacemos
           </p>
           <h2 className="font-heading uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl text-[#0A0A0A]">
             Nuestros servicios
           </h2>
-          <p className="font-accent italic text-lg sm:text-xl text-[#0A0A0A]/70 mt-4 max-w-2xl mx-auto">
+          <p className="font-sub italic text-lg sm:text-xl text-[#0A0A0A] mt-4 max-w-2xl mx-auto">
             Cada trazo, cada perforación: pensados, planeados y ejecutados con
             obsesión por el detalle.
           </p>

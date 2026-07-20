@@ -1,29 +1,64 @@
 import { useState } from "react";
 import { Star, X } from "lucide-react";
+import foto01 from "@/assets/foto01.webp";
+import foto02 from "@/assets/foto02.webp";
+import foto03 from "@/assets/foto03.webp";
+import foto04 from "@/assets/foto04.webp";
+import foto06 from "@/assets/foto06.webp";
+import foto07 from "@/assets/foto07.webp";
+import foto08 from "@/assets/foto08.webp";
+import foto09 from "@/assets/foto09.webp";
+import foto10 from "@/assets/foto10.webp";
+import foto11 from "@/assets/foto11.webp";
 
 const WORKS = [
   {
-    url: "https://images.unsplash.com/photo-1597852075234-fd721ac361d3?crop=entropy&cs=srgb&fm=jpg&q=85&w=1400",
+    url: foto01,
     label: "Tatuaje en proceso",
     cat: "tattoo",
   },
   {
-    url: "https://images.pexels.com/photos/13575093/pexels-photo-13575093.jpeg?auto=compress&cs=tinysrgb&w=900",
+    url: foto02,
     label: "Helix & lóbulo",
     cat: "piercing",
   },
   {
-    url: "https://images.pexels.com/photos/2134085/pexels-photo-2134085.jpeg?auto=compress&cs=tinysrgb&w=900",
+    url: foto03,
     label: "Color tradicional",
     cat: "tattoo",
   },
   {
-    url: "https://images.pexels.com/photos/37023013/pexels-photo-37023013.jpeg?auto=compress&cs=tinysrgb&w=900",
+    url: foto04,
     label: "Diseño en estudio",
     cat: "tattoo",
   },
   {
-    url: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?crop=entropy&cs=srgb&fm=jpg&q=85&w=900",
+    url: foto06,
+    label: "Estilo japonés",
+    cat: "tattoo",
+  },
+  {
+    url: foto07,
+    label: "Estilo japonés",
+    cat: "tattoo",
+  },
+  {
+    url: foto08,
+    label: "Estilo japonés",
+    cat: "tattoo",
+  },
+  {
+    url: foto09,
+    label: "Estilo japonés",
+    cat: "tattoo",
+  },
+  {
+    url: foto10,
+    label: "Estilo japonés",
+    cat: "tattoo",
+  },
+  {
+    url: foto11,
     label: "Estilo japonés",
     cat: "tattoo",
   },
@@ -40,29 +75,28 @@ export default function Gallery() {
     >
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
         <div className="text-center mb-12">
-          <p className="font-sub uppercase tracking-[0.3em] text-xs text-[#B73225] mb-3">
+          <p className="font-sub uppercase tracking-[0.3em] text-sm text-[#B73225] mb-3">
             Trabajos seleccionados
           </p>
           <h2 className="font-heading uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl">
             La Galería
           </h2>
-          <p className="font-accent italic text-lg sm:text-xl text-[#E8DCC4]/70 mt-4 max-w-2xl mx-auto">
+          <p className="font-sub italic text-lg sm:text-xl text-[#E8DCC4] mt-4 max-w-2xl mx-auto">
             Un puñado de obras recientes. Cada pieza tiene una historia detrás.
           </p>
         </div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 grid-flow-row-dense gap-3 md:gap-4">
           {WORKS.map((img, idx) => {
-            const big = idx === 0;
+            const big = idx === 0 || idx === 6;
             return (
               <button
                 key={idx}
                 data-testid={`gallery-item-${idx}`}
                 onClick={() => setLightbox(img)}
-                className={`group relative overflow-hidden border-2 border-[#E8DCC4] ${
-                  big ? "col-span-2 row-span-2 aspect-square" : "aspect-square"
-                }`}
+                className={`group relative overflow-hidden border-2 border-[#E8DCC4] ${big ? "col-span-2 row-span-2 aspect-square" : "aspect-square"
+                  }`}
               >
                 <img
                   src={img.url}
@@ -75,8 +109,8 @@ export default function Gallery() {
                     {img.cat === "tattoo"
                       ? "Tattoo"
                       : img.cat === "piercing"
-                      ? "Piercing"
-                      : "Instagram"}
+                        ? "Piercing"
+                        : "Instagram"}
                   </span>
                 </div>
                 <div className="absolute bottom-0 left-0 right-0 bg-[#0A0A0A]/85 border-t-2 border-[#E8DCC4] px-3 py-2 flex items-center justify-between opacity-0 group-hover:opacity-100 transition-opacity">

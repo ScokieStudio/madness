@@ -1,5 +1,6 @@
 import { ArrowDown, Star, MapPin } from "lucide-react";
 import { BRAND, CONTACT } from "../lib/constants";
+import heroImage from "@/assets/hero.jpeg";
 
 export default function Hero() {
   const scrollTo = (id) => {
@@ -17,8 +18,7 @@ export default function Hero() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          backgroundImage:
-            "url('https://images.unsplash.com/photo-1597852075234-fd721ac361d3?crop=entropy&cs=srgb&fm=jpg&q=85&w=2400')",
+          backgroundImage: `url(${heroImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

@@ -21,9 +21,8 @@ export default function Header() {
   return (
     <header
       data-testid="site-header"
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${
-        scrolled ? "bg-[#E8DCC4]" : "bg-[#E8DCC4]/95"
-      } border-b-4 border-[#0A0A0A]`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-200 ${scrolled ? "bg-[#E8DCC4]" : "bg-[#E8DCC4]/95"
+        } border-b-4 border-[#0A0A0A]`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 flex items-center justify-between h-16 md:h-20">
         <button
@@ -75,7 +74,7 @@ export default function Header() {
             onClick={() => scrollTo("contacto")}
             className="btn-vintage font-sub uppercase tracking-widest text-sm bg-[#B73225] text-[#E8DCC4] border-2 border-[#0A0A0A] hard-shadow px-5 py-2"
           >
-            Reservar
+            Reservar Turno
           </button>
         </nav>
 

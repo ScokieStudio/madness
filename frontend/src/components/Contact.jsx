@@ -56,7 +56,7 @@ export default function Contact() {
           <h2 className="font-heading uppercase tracking-tight text-4xl sm:text-5xl md:text-6xl">
             Contacto
           </h2>
-          <p className="font-accent italic text-lg sm:text-xl text-[#E8DCC4]/80 mt-4 max-w-2xl mx-auto">
+          <p className="font-sub italic text-lg sm:text-xl text-[#E8DCC4] mt-4 max-w-2xl mx-auto">
             Completá el formulario y te abrimos un chat de WhatsApp con tu pedido
             listo para enviar.
           </p>
@@ -188,7 +188,7 @@ export default function Contact() {
               <MessageCircle className="w-5 h-5" />
               Enviar por WhatsApp
             </button>
-            <p className="mt-4 font-accent italic text-sm text-[#0A0A0A]/70">
+            <p className="mt-4 font-accent italic text-sm text-[#0A0A0A]">
               * Al enviar se abrirá WhatsApp con tu mensaje listo. No guardamos
               tus datos en ningún servidor.
             </p>
@@ -266,14 +266,13 @@ export default function Contact() {
               <iframe
                 data-testid="map-iframe"
                 title="Madness Tattoo & Piercing - Mapa"
-                src={`https://www.google.com/maps?q=${encodeURIComponent(
-                  CONTACT.mapsQuery
-                )}&output=embed`}
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3279.400787786865!2d-58.25820102290633!3d-34.720290663666255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32e15371a5dd9%3A0xf7bb254c88868515!2sTattoo%20%26%20Piercing%20Madness%2F%20Peluqueria%20tradicional%20masculina!5e0!3m2!1ses-419!2sar!4v1784311682152!5m2!1ses-419!2sar"
                 width="100%"
-                height="260"
+                height="300"
                 style={{ border: 0 }}
+                allowFullScreen
                 loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="strict-origin-when-cross-origin"
               />
             </div>
           </aside>
